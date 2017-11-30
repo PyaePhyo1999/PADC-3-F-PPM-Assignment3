@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pyaephyomaung.padcmyanmar.padcassignment3.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallpaper"
+        android:id="@+id/rv_curiosity">
+
+        <ImageView
+            android:id="@+id/iv_curiosity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/tv_curiosity"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/curiosity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_facebook"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="77dp"
+            android:text="Curiosity"
+            android:textColor="#18FFFF"
+            android:textSize="30sp"
+            android:id="@+id/tv_curiosity" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="35dp"
+          android:layout_marginRight="35dp"
+          android:id="@+id/ll_facebook">
+         <ImageView
+             android:layout_width="35dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/facebook"
+             android:background="#CC283593"
+             android:id="@+id/iv_facebook"/>
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="@string/sign_in_with_facebook"
+              android:textAllCaps="false"
+              android:textColor="#ffffff"
+              android:id="@+id/btn_facebook"
+              android:background="#CC303F9F"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/ll_facebook"
+          android:layout_marginRight="35dp"
+          android:layout_marginLeft="35dp"
+          android:layout_marginTop="10dp"
+          android:id="@+id/ll_google">
+
+          <ImageView
+              android:layout_width="35dp"
+              android:layout_height="match_parent"
+              android:id="@+id/iv_google"
+              android:src="@drawable/google"
+              android:background="#CC1565C0"
+
+              />
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/btn_google"
+              android:background="#CC1976D2"
+              android:textColor="#ffffff"
+              android:text="@string/sign_in_with_google"
+              android:textAllCaps="false"
+              />
+
+
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_twitter"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_below="@id/ll_google"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/twitter"
+                android:id="@+id/iv_twitter"
+                android:background="#CC0277BD"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sign_in_with_twitter"
+                android:textAllCaps="false"
+
+                android:layout_below="@id/btn_google"
+                android:id="@+id/btn_twitter"
+                android:layout_centerInParent="true"
+                android:background="#CC0288D1"
+                android:textColor="#ffffff"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_below="@id/ll_twitter"
+            android:id="@+id/ll_email">
+
+
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sign_up_with_email"
+                android:textAllCaps="false"
+                android:layout_margin="1dp"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                android:background="#CC9E9E9E"
+                android:id="@+id/btn_Sign_up_with_email"
+
+            />
+
+
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="@string/sign_in_with_email"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:background="#CC9E9E9E"
+                android:id="@+id/btn_Sign_in_with_email"
+                android:drawableLeft="@drawable/ic_mail_outline_black_24dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_terms_conditions_privacy"
+            android:text="@string/terms_conditions_privacy_policy"
+            android:textColor="#03BFA5"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
